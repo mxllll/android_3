@@ -22,7 +22,8 @@
         android:orientation="horizontal"
         tools:ignore="UselessParent">
 
-        <ImageButton
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:contentDescription="@string/todo"
@@ -40,15 +41,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
+                android:lines="1"
                 android:text="@string/username_3"
                 android:textColor="@color/title" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_regular"
-                android:text="@string/_2_days_ago"
-                android:textColor="@color/post_time" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/_2_days_ago"
+                    android:textColor="@color/post_time" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/_2_days_ago"
+                    android:textColor="@color/post_time" />
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
@@ -59,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="40dp"
+        android:lines="3"
         android:text="@string/text_1"
         android:textColor="@color/title"
         android:textSize="16sp" />
@@ -81,11 +99,11 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/like_btn"
             tools:ignore="SmallSp" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/like_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/like"

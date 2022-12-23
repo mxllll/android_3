@@ -9,7 +9,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="text_title">Известные люди</string>
+    <string name="text_title">Известные личности</string>
     <string name="roman_kamushken">Roman Kamushken</string>
     <string name="_2_days_ago">2 days ago</string>
     <string name="todo">TODO</string>
@@ -21,4 +21,5 @@
     <string name="text_3">“into component container and with resizing constraints set????”</string>
     <string name="text_2">“into component container and with resizing constraints set????”</string>
     <string name="account">Account</string>
+    <string name="search">Search</string>
 </resources>
